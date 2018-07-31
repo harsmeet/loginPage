@@ -4,7 +4,7 @@ package com.example.harsmeet.login.DbHelper;
  * Created by Hars on 4/28/2017.
  */
 
-public class SignUp {
+public class SignUpDB {
 
 int id;
 
