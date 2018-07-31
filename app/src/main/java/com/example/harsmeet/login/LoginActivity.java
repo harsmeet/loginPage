@@ -3,6 +3,7 @@ package com.example.harsmeet.login;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -91,14 +92,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(getApplicationContext(),"HELLO :)",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(),"HELLO :)",Toast.LENGTH_SHORT).show();
 
+//                Register register = new Register();
+
+                Intent intent = new Intent(getApplicationContext(),Register.class);
+
+                startActivity(intent);
             }
         });
-
-
-
-
 
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -153,7 +155,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         }
     }
-
 
     /**
      * Attempts to sign in or register the account specified by the login form.
@@ -341,19 +342,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
 
             // TODO: register the new account here.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             return true;
