@@ -23,10 +23,7 @@ public class WelcomeScreen extends AppCompatActivity {
 
 
 
-
-
-
-
+//    API IMPLEMENTATION:
 
 //    private void fetchClients() {
 //    private void fetchClients(int flag) {

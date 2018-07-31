@@ -44,12 +44,9 @@ import static android.Manifest.permission.READ_CONTACTS;
  */
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
-
     String email ;
     String password;
     DatabaseHelper helper = new DatabaseHelper(this);
-
-
 
     /**
      * Id to identity READ_CONTACTS permission request.

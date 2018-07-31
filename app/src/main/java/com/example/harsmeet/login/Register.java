@@ -28,8 +28,6 @@ public class Register extends AppCompatActivity{
 
     String emailStr,passwdStr,confmPasswdStr;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

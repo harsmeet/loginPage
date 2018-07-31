@@ -7,7 +7,6 @@ package com.example.harsmeet.login.DbHelper;
 public class SignUpDB {
 
 int id;
-
     String email,pass;
 
     public void setId(int id)
