@@ -217,23 +217,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 //            editor.commit();
             // preferences.Editor editor=preferences.edit();
             Toast.makeText(LoginActivity.this, " YOU ARE LOGIN NOW..!! ", Toast.LENGTH_SHORT).show();
-
-//            Intent i = new Intent(MainActivity.this, Ndrawer.class);
-//            startActivity(i);
+            Intent i = new Intent(LoginActivity.this, WelcomeScreen.class);
+            startActivity(i);
 
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
         if (cancel) {
             // There was an error; don't attempt login and focus the first

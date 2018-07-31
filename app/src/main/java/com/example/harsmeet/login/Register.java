@@ -62,7 +62,6 @@ public class Register extends AppCompatActivity{
                      confmPasswdStr = etConfirmPasswd.getText().toString();
 
 
-
                     if (!passwdStr.equals(confmPasswdStr)) {
 
                         Toast.makeText(Register.this, "Wrong Password..!", Toast.LENGTH_SHORT).show();
@@ -81,11 +80,8 @@ public class Register extends AppCompatActivity{
 
                     }
 
-
-
                 }
             });
-
 
 
         }
@@ -93,8 +89,6 @@ public class Register extends AppCompatActivity{
 
             e.printStackTrace();
         }
-
-
 
     }
 
