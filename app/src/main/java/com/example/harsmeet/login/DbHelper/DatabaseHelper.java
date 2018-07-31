@@ -15,13 +15,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "signup.db";
     private static final String TABLE_NAME = "contacts";
-
     private static final String COLUMN_ID = "id";
-
     private static final String COLUMN_EMAIL = "email";
     private static final String COLUMN_PASS = "pass";
-    SQLiteDatabase db;
 
+    SQLiteDatabase db;
 
     private String TABLE_CREATE = "CREATE TABLE " + TABLE_NAME + "("
             + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -70,7 +68,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
@@ -82,7 +79,5 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
 
     }
-
-
 }
 

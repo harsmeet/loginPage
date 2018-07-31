@@ -16,11 +16,9 @@ public class WelcomeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome);
 
-
     }
 
-    }
-
+}
 
 
 //    API IMPLEMENTATION:
@@ -49,10 +47,6 @@ public class WelcomeScreen extends AppCompatActivity {
 //
 //        Utils.myMethod(BaseAsyncTask.METHOD_POST, "", jsonObject, getMainActivity(), MyClientsFragments.this, true);
 //    }
-
-
-
-
 
 
 //

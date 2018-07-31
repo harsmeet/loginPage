@@ -16,17 +16,17 @@ import com.example.harsmeet.login.Util.ValidationsUtil;
  * Created by harsmeet on 31-07-2018.
  */
 
-public class Register extends AppCompatActivity{
+public class Register extends AppCompatActivity {
 
     DatabaseHelper helper = new DatabaseHelper(this);
 
 
-    EditText etEmail,etPasswd,etConfirmPasswd;
+    EditText etEmail, etPasswd, etConfirmPasswd;
     Button btn_done;
 
     ValidationsUtil validationUtil = new ValidationsUtil();
 
-    String emailStr,passwdStr,confmPasswdStr;
+    String emailStr, passwdStr, confmPasswdStr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +34,11 @@ public class Register extends AppCompatActivity{
         setContentView(R.layout.register);
 
 
-         etEmail = (EditText)findViewById(R.id.et_email);
-         etPasswd = (EditText)findViewById(R.id.et_password);
-         etConfirmPasswd = (EditText)findViewById(R.id.et_ConfirmPassword);
+        etEmail = (EditText) findViewById(R.id.et_email);
+        etPasswd = (EditText) findViewById(R.id.et_password);
+        etConfirmPasswd = (EditText) findViewById(R.id.et_ConfirmPassword);
 
-         btn_done =(Button)findViewById(R.id.bt_Done);
+        btn_done = (Button) findViewById(R.id.bt_Done);
 
         try {
 
@@ -49,21 +49,21 @@ public class Register extends AppCompatActivity{
 
                     if (validationUtil.isEmailValid(etEmail.getText().toString())) {
 
-                         emailStr = etEmail.getText().toString();
+                        emailStr = etEmail.getText().toString();
 
                     } else {
                         etEmail.setError("Email is not valid");
 
                     }
 //                    get Text
-                     passwdStr = etPasswd.getText().toString();
-                     confmPasswdStr = etConfirmPasswd.getText().toString();
+                    passwdStr = etPasswd.getText().toString();
+                    confmPasswdStr = etConfirmPasswd.getText().toString();
 
 
                     if (!passwdStr.equals(confmPasswdStr)) {
 
                         Toast.makeText(Register.this, "Wrong Password..!", Toast.LENGTH_SHORT).show();
-                    } else if (!helper.checkUser(emailStr,passwdStr)) {
+                    } else if (!helper.checkUser(emailStr, passwdStr)) {
 //                   insert the details in database
 
                         SignUpDB signUpDB = new SignUpDB();
@@ -82,8 +82,7 @@ public class Register extends AppCompatActivity{
             });
 
 
-        }
-        catch (Exception e){
+        } catch (Exception e) {
 
             e.printStackTrace();
         }
