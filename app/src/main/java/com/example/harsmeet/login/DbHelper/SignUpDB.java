@@ -18,7 +18,6 @@ int id;
         return this.id;
     }
 
-
     public void setEmail(String email)
     {
         this.email=email;
@@ -27,7 +26,6 @@ int id;
     {
         return this.email;
     }
-
 
     public void setPass(String pass)
     {

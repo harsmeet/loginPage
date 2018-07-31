@@ -121,12 +121,6 @@
 //        @BindView(R.id.tv_email)
 //        protected TextView tvEmail;
 //
-//        @BindView(R.id.tv_number)
-//        protected TextView tvNumber;
-//
-//        @BindView(R.id.cv_my_clients)
-//        protected CardView cvMyClients;
-//
 //        public ViewHolder(View itemView) {
 //            super(itemView);
 //            ButterKnife.bind(this, itemView);

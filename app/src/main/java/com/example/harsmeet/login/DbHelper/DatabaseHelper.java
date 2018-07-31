@@ -25,9 +25,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private String TABLE_CREATE = "CREATE TABLE " + TABLE_NAME + "("
             + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + COLUMN_EMAIL + " TEXT,"  + COLUMN_PASS + " TEXT " + ")";
-
-
+            + COLUMN_EMAIL + " TEXT," + COLUMN_PASS + " TEXT " + ")";
     /**
      * Constructor
      *
@@ -73,7 +71,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
@@ -85,8 +82,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
 
     }
-
-
 
 
 }
