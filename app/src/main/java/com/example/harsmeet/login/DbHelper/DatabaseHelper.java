@@ -51,20 +51,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    public boolean checkUser(String emailStr, String passwdStr) {
+        public boolean checkUser (String emailStr, String passwdStr){
+
+
         String[] columns =
                 {
                         COLUMN_ID
                 };
         db = this.getReadableDatabase();
-        String selection = COLUMN_EMAIL + " = ? " + " AND " + COLUMN_PASS + " = ? ";
-        String[] selectArgs = {emailStr, passwdStr};
-        Cursor cursor = db.query(TABLE_NAME, columns, selection, selectArgs, null, null, null);
-        int cursorcount = cursor.getCount();
+
+        try {
+            String selection = COLUMN_EMAIL + " = ? " + " AND " + COLUMN_PASS + " = ? ";
+            String[] selectArgs = {emailStr, passwdStr};
+            Cursor cursor = db.query(TABLE_NAME, columns, selection, selectArgs, null, null, null);
+            int cursorcount = cursor.getCount();
+
+
         if (cursorcount > 0) {
             return true;
         }
-        return false;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+            return false;
 
     }
 

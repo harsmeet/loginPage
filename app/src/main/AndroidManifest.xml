@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Register" />
-        <activity android:name=".WelcomeScreen" />
+        <activity android:name=".deliveryDetails.Deliverydetails" />
     </application>
 
 </manifest>

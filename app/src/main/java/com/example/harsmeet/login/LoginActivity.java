@@ -33,6 +33,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.harsmeet.login.DbHelper.DatabaseHelper;
+import com.example.harsmeet.login.deliveryDetails.Deliverydetails;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -214,7 +215,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 //            editor.commit();
             // preferences.Editor editor=preferences.edit();
             Toast.makeText(LoginActivity.this, " YOU ARE LOGIN NOW..!! ", Toast.LENGTH_SHORT).show();
-            Intent i = new Intent(LoginActivity.this, WelcomeScreen.class);
+            Intent i = new Intent(LoginActivity.this, Deliverydetails.class);
             startActivity(i);
 
         }
