@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/cv_live_enquiries"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--card_view:cardCornerRadius="10dp">-->
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/tv_product_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:text="Product"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/txtProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tv_product_text"
+            android:layout_toRightOf="@+id/tv_product_text"
+            android:text="Steel"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/tv_brand_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_product_text"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:text="Brand "
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/tvBrandName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtProductName"
+            android:layout_below="@+id/tv_product_text"
+            android:text="Cement "
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/txtProductName" />
+
+
+        <TextView
+            android:id="@+id/tv_quantity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toStartOf="@+id/tvQuantity"
+            android:text="Quantity "
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@+id/tvQuantity" />
+
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="88"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tv_soldas_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_quantity_text"
+            android:layout_alignStart="@+id/tv_quantity_text"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/tvBrandName"
+            android:text="Sold As "
+            android:layout_alignLeft="@+id/tv_quantity_text"
+            android:layout_toRightOf="@+id/tvBrandName" />
+
+        <TextView
+            android:id="@+id/tvSoldAs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvQuantity"
+            android:layout_below="@+id/tv_quantity_text"
+            android:layout_alignParentEnd="true"
+            android:text="packet"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/tvQuantity"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp" />
+
+        <TextView
+            android:id="@+id/tv_attribute_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_brand_text"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:text="Attributes "
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/tvAttributesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtProductName"
+            android:layout_below="@+id/tv_brand_text"
+            android:text="White "
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"
+            android:layout_alignLeft="@+id/txtProductName" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_clock"
+            android:text="Bangalore"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/tv_attribute_text"
+            android:layout_marginLeft="16dp"
+            android:drawableStart="@drawable/ic_clock" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_enquiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@id/tv_attribute_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp" />
+
+
+    </RelativeLayout>
+<!--</android.support.v7.widget.CardView>-->
