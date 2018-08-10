@@ -72,7 +72,6 @@ public class Register extends AppCompatActivity {
                         signUpDB.setPass(passwdStr);
 
                         helper.insertContact(signUpDB);
-                        Toast.makeText(Register.this, "YOU ARE SUCCESSFULLY SIGN-UP", Toast.LENGTH_SHORT).show();
                         Intent i = new Intent(Register.this, LoginActivity.class);
                         startActivity(i);
 
