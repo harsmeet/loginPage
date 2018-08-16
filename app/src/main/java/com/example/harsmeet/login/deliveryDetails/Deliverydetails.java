@@ -21,10 +21,8 @@ import java.util.Calendar;
 public class Deliverydetails extends AppCompatActivity {
 
 
-    RelativeLayout rl_time;
-    RelativeLayout rl_date;
-    TextView tv_enter_date;
-    TextView tv_enter_time;
+    RelativeLayout rl_time,rl_date;
+    TextView tv_enter_date,tv_enter_time;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
