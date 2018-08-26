@@ -52,7 +52,7 @@ public class Register extends AppCompatActivity {
                         emailStr = etEmail.getText().toString();
 
                     } else {
-                        etEmail.setError("Email is not valid !! ");
+                        etEmail.setError("Email is not valid :(");
 
                     }
 //                    get Text
